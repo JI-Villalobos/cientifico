@@ -1,0 +1,14 @@
+{
+  "name": "cientifico",
+  "version": "1.0.0",
+  "description": "Spa app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "JI-Villalobos",
+  "license": "MIT"
+}
