@@ -4,7 +4,10 @@ const path = require('path')
 //trabajar con html
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-//esxportar modulo de configuraciones
+//hace referencia al paquete copy-webpack-plugin
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+//exportar modulo de configuraciones
 
 module.exports = {
     //punto de entrada
@@ -45,6 +48,11 @@ module.exports = {
                 //ruta donde se guardara el template
                 filename: './index.html'
             }
-        )
+        ),
+
+        new CopyWebpackPlugin({
+            patterns: [{ from: './src/styles/styles.css',
+            to: '' }],
+          })
     ]
 }
