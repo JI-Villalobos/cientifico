@@ -3,6 +3,7 @@ const resolveRoutes = (route) => {
     //la cantidad de personajes es < 1000
     //por lo tanto la longitud de caracteres no supera 3
     if(route.length <= 3) {
+        //valida si es una sección o un id
         let validRoute = route === '/' ? route : '/:id'
         return validRoute
     }
