@@ -18,7 +18,7 @@ module.exports = {
     },
     //resolver extenciones del proyecto
     resolve: {
-        extensions: ['js'],
+        extensions: ['.js'],
     },
     //modulo de reglas
     module: {
@@ -36,7 +36,7 @@ module.exports = {
     },
     //plugins
     plugins: [
-        new HtmlWebpackPlugin([
+        new HtmlWebpackPlugin(
             {
                 //inyectar valores en archivos html
                 inject: true,
@@ -45,6 +45,6 @@ module.exports = {
                 //ruta donde se guardara el template
                 filename: './index.html'
             }
-        ])
+        )
     ]
 }
